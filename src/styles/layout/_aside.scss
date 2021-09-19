@@ -1,0 +1,41 @@
+// ASIDE
+// ==================
+// 1. Default
+// ==================
+
+
+// 1. Default
+// ------------------
+aside {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: $white;
+    box-shadow: 10px 0 20px rgba($black, 0.1);
+    padding: 80px 20px 20px;
+    font-size: .85rem;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 10px;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+        line-height: 1.25rem;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 0.75rem;
+        color: $grey;
+    }
+}
+// ------------------

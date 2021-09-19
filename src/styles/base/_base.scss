@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: 18px;
+  line-height: 150%;
+  color: $grey;
+
+  @media (min-width: 769px) {
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  font-weight: 400;
+  color: $black;
+  line-height: 125%;
+}
+
+strong {
+  color: $black;
+}
+
+code {
+  display: block;
+  background: $black;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin: 40px 0;
+  font-size: 0.9rem;
+}
