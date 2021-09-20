@@ -1,4 +1,5 @@
 import '@styles/Views/Index.scss'
+// import '../../assets/images/image-tes.jpg'
 
 import { 
     $selector, 

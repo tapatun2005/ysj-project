@@ -2,9 +2,7 @@ const { Config } = require('./config');
 
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
-console.log('config')
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: Config.views,
   output: {
@@ -103,6 +101,14 @@ module.exports = {
     //   template: "./src/index.html",
     //   filename: "index.html"
     // }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, '../src/assets/'),
+          to: "../dist/assets/",
+        }
+      ],
+    }),
     ...Config.htmlPlugins
   ]
 };
