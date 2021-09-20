@@ -66,7 +66,10 @@ section {
 
 .white {
     background-color: $white;
-    color: $black;
+}
+
+.grey {
+    background-color: $grey;
 }
 // -----------------
 
@@ -81,9 +84,10 @@ section {
     margin-left: -20px;
 }
 
-.col {
+.col,
+div[class^='col-'] {
     flex: 1 0 0;
-    padding: 0 20px;
+    padding: 0 40px;
 
     @media (max-width: 768px) {
         flex: 1 0 auto;
@@ -98,6 +102,12 @@ section {
         &:last-child {
             margin-bottom: 0;
         }
+    }
+}
+
+.col {
+    &-100 {
+        min-width: 100%;
     }
 }
 // -----------------

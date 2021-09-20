@@ -1,0 +1,38 @@
+extends ../../Layout/master.pug
+
+block content
+  main
+    section.hero
+      .container.-lg
+        .breadcrumb Schools          
+        h1 SCHOOL OF THE ARTS ACTION RESEARCH TEAM
+          span Dr Cath Heinemeyer, Avalon Garvey and Henry Dawson
+        .hero__desc
+          p.-lg The School of the Arts team worked through an autoethnographic approach, using artistic stimuli to reflect on their experiences of university. They examined where their York St John education had provided spaces to explore issues of ecological justice, and where opportunities were missed. They also led free writing and poetry exercises with fellow student researchers to gain a wider range of perspectives. 
+    
+    section
+      .container.-lg
+        .cols
+          .col
+            picture.image-lazy
+              source(media="(min-width: 320px)" data-srcset="/assets/image-tes.jpg")
+              img(src="/assets/image-tes.jpg", alt="")
+          .col
+            p Key outputs included:
+            ul
+              li a spoken word piece by Henry Dawson, drawing on a pair of contrasting images representing the Global North and South to articulate what ecological injustice means to him, and the way it is often hidden from view in everyday life and education. This was an important part of the team’s process of identifying the need for greater honesty and space for discussion of ecological and justice issues in university life.
+                audio(controls="true")
+                  source(src="horse.mp3" type="audio/mpeg")
+                  span Your browser does not support the audio element.
+              li a ‘zine’ (handmade magazine) by Avalon Garvey containing many findings of the team’s research. In place of ‘recommendations’ this zine shares possible visions of ways towards a more ‘biophilic’ university which engages students actively in ecological justice through the campus and curriculum. Some images of the zine are included here.
+    
+    section.grey
+      .container.-lg.center
+        h2 Check out other schools
+        .schools
+          a(href="").school
+            h3 Art
+          a(href="").school
+            h3 Humanity
+          a(href="").school
+            h3 Business

@@ -1,0 +1,28 @@
+.questions {
+
+}
+
+.question {
+    counter-increment: number;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:before {
+        content: counter(number);
+        position: absolute;
+        color: var(--primary);
+        left: 0;
+        font-family: $font-title;
+        font-size: 1.5rem;
+    }
+
+    span {
+        color: var(--primary);
+        font-weight: bold;
+    }
+}

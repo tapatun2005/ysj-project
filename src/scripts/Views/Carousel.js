@@ -1,1 +1,0 @@
-import '@styles/Views/Carousel.scss'

@@ -12,6 +12,10 @@ h1 {
         line-height: 150%;
         margin: 25px 0;
     }
+
+    @media (max-width: 480px) {
+        font-size: 15vw;
+    }
 }
 
 h2 {
@@ -28,12 +32,24 @@ p {
     margin-top: 0;
     
     &.-lg {
-        font-size: 1.5rem;
+        @media (min-width: 481px) {
+            font-size: 1.5rem;
+        }
     }
 
     &.-sm {
-        font-size: .9rem;
+        @media (min-width: 481px) {
+            font-size: .9rem;
+        }
     }
+}
+
+li {
+    margin-bottom: 2rem;
+}
+
+a {
+    color: var(--primary);
 }
 
 .center {
