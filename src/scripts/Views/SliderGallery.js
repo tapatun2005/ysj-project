@@ -1,9 +1,5 @@
  // Styles
-import '../../styles/Views/SliderGallery.scss'
-
-// Images
-import '../../assets/images/image-tes.jpg'
-
+import '@styles/Views/SliderGallery.scss'
 
 // Library
 import {
