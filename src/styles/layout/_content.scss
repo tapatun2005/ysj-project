@@ -2,6 +2,7 @@
 // ===================
 // 1. Default
 // 2. Backgrounds
+// 3. Grid
 // ===================
 
 
@@ -66,5 +67,37 @@ section {
 .white {
     background-color: $white;
     color: $black;
+}
+// -----------------
+
+
+// 3. Grid
+// -----------------
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+
+.col {
+    flex: 1 0 0;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+        flex: 1 0 auto;
+        padding: 20px;
+        width: 100%;
+    }
+
+    & > * {
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 // -----------------
