@@ -76,7 +76,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.html$/,
+        test: /\.(html)$/,
         use: {
           loader: "html-loader",
           options: {
@@ -89,7 +89,7 @@ module.exports = {
       { 
         test: /\.pug$/,
         use: {
-          loader: "pug-loader"
+          loader: "pug-loader",
         }
       }
     ]

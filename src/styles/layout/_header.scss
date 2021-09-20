@@ -12,10 +12,20 @@ header {
     z-index: 2;
     top: 0;
     left: 0;
-    width: 100vw;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba($black, 0.1);
-    background: $white;
+    width: 60px;
+    padding: 10px;
+    background: var(--primary);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white;
+    
+    @media (max-width: 768px) {
+        width: 100vw;
+        height: 50px;
+        flex-direction: row;
+    }
 }
 // -------------------
 

@@ -14,22 +14,13 @@ body {
   font-family: $font;
   font-size: 18px;
   line-height: 150%;
-  color: $grey;
+  color: $black;
+  background: $white;
+  
 
   @media (min-width: 769px) {
     font-size: 18px;
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-title;
-  font-weight: 400;
-  color: $black;
-  line-height: 125%;
-}
-
-strong {
-  color: $black;
 }
 
 code {

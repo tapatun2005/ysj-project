@@ -1,6 +1,7 @@
 // CONTENT
 // ===================
 // 1. Default
+// 2. Backgrounds
 // ===================
 
 
@@ -9,12 +10,61 @@
 #content {
     display: flex;
     grid-column-gap: 20px;
-    padding: 0 40px;
+    margin-left: 60px;
+    @media (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 50px;
+    }
 }
 
 main {
     width: 100%;
-    max-width: 992px;
+}
+
+section {
+    display: block;
+    position: relative;
+    padding: 100px 0;
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
+    &__reset {
+        padding: 0;
+    }
+
+    &__slim {
+        padding: 50px 0;
+        @media (max-width: 768px) {
+            padding: 25px 0;
+        }
+    }
+}
+
+.container {
+    padding: 0 40px;
     margin: 0 auto;
+    max-width: 1000px;
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+
+    &.-lg {
+        max-width: 1200px;
+    }
+}
+// -----------------
+
+
+// 2. Background
+// -----------------
+.black {
+    background-color: $black;
+    color: $white;
+}
+
+.white {
+    background-color: $white;
+    color: $black;
 }
 // -----------------
