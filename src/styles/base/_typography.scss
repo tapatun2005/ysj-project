@@ -6,6 +6,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 5rem;
+    span {
+        display: block;
+        font-size: 0.25em;
+        line-height: 150%;
+        margin: 25px 0;
+    }
 }
 
 h2 {

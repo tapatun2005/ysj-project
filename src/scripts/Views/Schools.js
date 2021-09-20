@@ -1,4 +1,4 @@
-import '@styles/Views/Index.scss'
+import '@styles/Views/Schools.scss'
 
 import { 
     $selector, 
