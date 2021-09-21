@@ -12,14 +12,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   color: $black;
   background: $white;
   
 
   @media (min-width: 769px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 

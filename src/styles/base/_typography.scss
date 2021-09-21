@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     span {
         display: block;
         font-size: 0.25em;
@@ -20,6 +20,9 @@ h1 {
 
 h2 {
     font-size: 3.5rem;
+    @media (max-width: 480px) {
+        font-size: 10vw;
+    }
 }
 
 h3 {
@@ -27,7 +30,7 @@ h3 {
 }
 
 p {
-    line-height: 150%;
+    line-height: 175%;
     margin-bottom: 2rem;
     margin-top: 0;
     
@@ -50,6 +53,13 @@ li {
 
 a {
     color: var(--primary);
+}
+
+strong  {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 5px;
+    background: var(--primary);
 }
 
 .center {

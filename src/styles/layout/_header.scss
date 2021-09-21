@@ -76,6 +76,8 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
 
     ul {
         margin: 0 auto;

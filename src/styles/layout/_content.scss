@@ -25,9 +25,9 @@ main {
 section {
     display: block;
     position: relative;
-    padding: 100px 0;
+    padding: 150px 0;
     @media (max-width: 768px) {
-        padding: 60px 0;
+        padding: 75px 0;
     }
 
     &__reset {
@@ -45,13 +45,20 @@ section {
 .container {
     padding: 0 40px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
+    position: relative;
+    width: 100%;
+    
     @media (max-width: 768px) {
         padding: 0 20px;
     }
 
+    &.-xlg {
+        max-width: 1600px;
+    }
+
     &.-lg {
-        max-width: 1200px;
+        max-width: 1400px;
     }
 }
 // -----------------
@@ -109,5 +116,13 @@ div[class^='col-'] {
     &-100 {
         min-width: 100%;
     }
+}
+
+.align {
+
+    &-center {
+        align-items: center;
+    }
+    
 }
 // -----------------

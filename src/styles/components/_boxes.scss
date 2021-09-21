@@ -15,6 +15,10 @@
     color: $black;
     text-decoration: none;
     flex: 1 0 auto;
+    @media (max-width: 620px) {
+        width: calc(100% - 40px);
+    }
+
     h3 {
         color: $white;
     }
