@@ -1,0 +1,21 @@
+.scroll {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 1;
+    
+    img {
+        @media (max-width: 1024px) {
+            width: 30px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
