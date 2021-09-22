@@ -3,6 +3,9 @@ extends ../../Layout/master.pug
 block content
   main
     section.hero
+      picture.image-lazy.hero__bg
+        source(media="(min-width: 320px)" data-srcset="/assets/homepage-bg.jpg")
+        img(src="/assets/homepage-bg.jpg", alt="")
       .container.-lg
         .breadcrumb Schools          
         h1 School of Education, Languages and Psychology Action Research Team

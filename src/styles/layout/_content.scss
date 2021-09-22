@@ -30,11 +30,11 @@ section {
         padding: 75px 0;
     }
 
-    &__reset {
+    &.-reset {
         padding: 0;
     }
 
-    &__slim {
+    &._slim {
         padding: 50px 0;
         @media (max-width: 768px) {
             padding: 25px 0;
@@ -89,6 +89,8 @@ section {
     justify-content: space-between;
     width: calc(100% + 40px);
     margin-left: -20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .col,
