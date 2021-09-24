@@ -6,13 +6,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 5rem;
-    span {
-        display: block;
-        font-size: 0.25em;
-        line-height: 150%;
-        margin: 25px 0;
-        color: var(--primary);
-    }
 
     @media (max-width: 480px) {
         font-size: 15vw;
@@ -37,12 +30,12 @@ h3 {
 }
 
 p {
-    line-height: 175%;
     margin-bottom: 2rem;
     margin-top: 0;
     
     &.-lg {
         font-size: 1.25rem;
+        line-height: 1.5em;
         @media (min-width: 481px) {
             font-size: 1.75rem;
         }
@@ -65,9 +58,18 @@ a {
 
 strong  {
     display: inline-block;
-    margin: 0 5px;
     padding: 0 5px;
     background: var(--primary);
+}
+
+.subtitle {
+    display: block;
+    font-size: 2rem;
+    line-height: 150%;
+    margin: 25px 0;
+    font-family: $font-title;
+    text-transform: uppercase;
+    color: var(--primary);
 }
 
 .center {

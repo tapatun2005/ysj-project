@@ -1,5 +1,6 @@
 @import 'utils/font';
 @import 'utils/vars';
+@import 'utils/mixins';
 
 @import 'base/reset';
 @import 'base/base';
@@ -8,7 +9,9 @@
 @import 'layout/header';
 @import 'layout/content';
 @import 'layout/footer';
+@import 'layout/loader';
 
 @import 'components/hero';
 @import 'components/images';
 @import 'components/scroll';
+@import 'components/split-words';

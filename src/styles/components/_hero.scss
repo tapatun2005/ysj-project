@@ -44,6 +44,11 @@
         max-width: 900px;
     }
 
+    .subtitle {
+        opacity: 0;
+        @include transition(1s, opacity);
+    }
+
     &__bg {
         position: absolute;
         width: 100%;
@@ -59,8 +64,22 @@
     &__desc {
         margin-left: 100px;
         max-width: 500px;
+        transform: translate(0, 50%);
+        opacity: 0;
+        @include transition(1s, (opacity, transform));
         @media (max-width: 480px) {
             margin-left: 50px;
         }
+
+        .is-loaded & {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    &.is-loaded {
+        .subtitle {
+            opacity: 1;
+        }    
     }
 }

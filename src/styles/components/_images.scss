@@ -6,3 +6,42 @@ picture {
         width: 100%;
     }
 }
+
+.image {
+    overflow: hidden;
+    
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: $white;
+        transform-origin: center right;
+        @include transition(1s, (transform));
+    }
+
+    picture {
+        display: block;
+        @include transition(1s, (transform));
+        transform: translate(100px) scale(1.25);
+    }
+
+    .black & {
+        &:after {
+            background-color: $black;
+        }
+    }
+
+    &.is-active {
+        
+        picture {
+            transform: translate(0) scale(1);
+        }
+
+        &:after {
+            transform: scale(0, 1);
+        }
+    }
+}

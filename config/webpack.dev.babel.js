@@ -14,6 +14,7 @@ module.exports = {
       '@styles': path.resolve(__dirname, '../src/styles/'),
     },
   },
+  watch: true,
   mode: "development",
   devServer: {
     contentBase: path.join(__dirname, "../dist"),
