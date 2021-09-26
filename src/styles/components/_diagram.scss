@@ -1,0 +1,109 @@
+.diagrams {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.diagram {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    &__one {
+        width: 100%;
+        position: relative;
+
+        ._content {
+            &:before,
+            &:after {
+                content:'';
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, 0);
+                border-top: 1px solid $white;
+                z-index: -1;
+            }
+            
+            &:before {
+                border-left: 1px solid $white;
+                border-radius: 20px 0 0 0;
+                @media (max-width: 768px) {
+                    left: 50%;
+                }
+            }
+
+            &:after {
+                left: 100%;
+                border-right: 1px solid $white;
+                border-radius: 0 20px 0 0;
+                @media (max-width: 768px) {
+                    left: 50%;
+                }
+            }
+
+        }
+    }
+
+    &__two,
+    &__three {
+        width: calc(50% - 40px);
+        @media (max-width: 480px) {
+            margin: 5px;
+            width: calc(50% - 20px);
+        }
+    }
+
+    &__two {
+        ._content {
+            &:after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                background: $white;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+            }
+        }
+    }
+
+    ._content {
+        padding: 20px 40px;
+        border: 1px solid $white;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 350px;
+        background-color: $black;
+        position: relative;
+
+        @media (max-width: 480px) {
+            padding: 10px;
+        }
+    }
+
+    h3 {
+        @media (max-width: 768px) {
+            font-size: 5vw;
+        }
+    }
+
+    ul {
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        font-size: 1rem;
+        opacity: .5;
+        line-height: 100%;
+        @media (max-width: 480px) {
+            font-size: 0.8rem;
+        }
+    }
+}
