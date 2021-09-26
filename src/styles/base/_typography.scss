@@ -27,6 +27,9 @@ h2 {
 
 h3 {
     font-size: 2.5rem;
+    @media (max-width: 480px) {
+        font-size: 8vw;
+    }
 }
 
 p {
@@ -60,6 +63,7 @@ strong  {
     display: inline-block;
     padding: 0 5px;
     background: var(--primary);
+    color: $white;
 }
 
 .subtitle {
@@ -69,9 +73,15 @@ strong  {
     margin: 25px 0;
     font-family: $font-title;
     text-transform: uppercase;
-    color: var(--primary);
 }
 
 .center {
     text-align: center;
+}
+
+.title {
+    display: flex;
+    img {
+        margin-right: 20px;
+    }
 }

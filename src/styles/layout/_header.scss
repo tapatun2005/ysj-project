@@ -11,7 +11,7 @@
 // -------------------
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 60px;
@@ -28,6 +28,12 @@ header {
         width: 100vw;
         height: 50px;
         flex-direction: row;
+    }
+
+    .social {
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }
 // -------------------
@@ -58,11 +64,26 @@ header {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
+        @include transition(.1s, transform);
         &:first-child {
-            top: 0;
+            transform: translate(0, -10px);
         }
         &:last-child {
-            top: 100%;
+            transform: translate(0, 8px);
+        }
+    }
+
+    &.is-active {
+        span {
+            &:nth-child(1) {
+                transform: translate(0, -50%) rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: translate(0, -50%) scale(0, 1);
+            }
+            &:nth-child(3) {
+                transform: translate(0, -50%) rotate(-45deg);
+            }
         }
     }
 }
@@ -78,12 +99,18 @@ nav {
     width: 100vw;
     height: 100vh;
     background: var(--primary);
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     flex-direction: column;
     visibility: hidden;
     opacity: 0;
+    @include transition(.25s, (opacity, visibility));
+
+    &.is-active {
+        visibility: visible;
+        opacity: 1;
+    }
 
     ul {
         margin: 0 auto;

@@ -3,23 +3,36 @@
     justify-content: space-between;
     width: calc(100% + 20px);
     flex-wrap: wrap;
+    margin: 100px 0;
 }
 
 .box {
     text-align: left;
-    background: var(--primary);
-    padding: 0px 40px 20px 40px;
+    background: $white;
+    padding: 60px 80px 40px;
     margin-bottom: 20px;
     margin-right: 20px;
     width: calc(50% - 20px);
-    color: $black;
     text-decoration: none;
     flex: 1 0 auto;
-    @media (max-width: 620px) {
+    color: $black;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba($black, .05);
+    @include transition(.1s, transform);
+    
+    @media (max-width: 768px) {
         width: calc(100% - 40px);
     }
+    @media (max-width: 480px) {
+        padding: 40px 40px 20px;
+    }
 
-    h3 {
-        color: $white;
+    img {
+        width: 35px;
+    }
+
+    &:hover {
+        transform: scale(1.025);
     }
 }

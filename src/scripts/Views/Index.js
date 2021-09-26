@@ -1,4 +1,10 @@
 import '@styles/Views/Index.scss'
 import App from '../App.js'
 
-App();
+import {
+    Video
+} from 'Components'
+
+App().then(() => {
+    Video('.video', 'picture')
+})

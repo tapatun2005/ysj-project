@@ -5,10 +5,18 @@ picture {
     img {
         width: 100%;
     }
+
+    &.-lg {
+        @media (min-width: 769px) {
+            display: block;
+            width: 150%;
+        }
+    }
 }
 
 .image {
     overflow: hidden;
+    position: relative;
     
     &:after {
         content: "";
@@ -44,4 +52,8 @@ picture {
             transform: scale(0, 1);
         }
     }
+}
+
+.icon {
+    width: 45px;
 }

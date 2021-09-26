@@ -1,0 +1,34 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 100px 0;
+    position: relative;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    li {
+        min-width: 100%;
+        padding: 0 100px;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__navs {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 23px;
+        }
+    }
+}

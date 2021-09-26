@@ -3,14 +3,6 @@
     max-width: 750px;
     &__desc {
         position: relative;
-        &:before{
-            position: absolute;
-            top: 0;
-            left: -30px;
-            content: '"';
-            font-size: 7rem;
-            color: var(--primary);
-        }
     }
     &__author {
         color: var(--primary);
