@@ -119,12 +119,31 @@ nav {
         padding: 0 20px;
     }
 
+    li {
+        margin: 0;
+    }
+
     a {
         color: $white;
         text-decoration: none;
         text-transform: uppercase;
         font-family: $font-title;
-        font-size: 2rem;
+        font-size: 4rem;
+        line-height: 100%;
+        display: block;
+        margin: 0 0 10px 0;
+        @include transition(.15s, transform);
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+        &.-sm {
+            font-size: 1.75rem;
+            color: darken(green, 10);
+        }
+        &:hover {
+            transform: translate(5px);
+            color: $black;
+        }
     }
 }
 // -------------------

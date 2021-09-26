@@ -3,6 +3,7 @@
     bottom: 60px;
     right: 60px;
     z-index: 1;
+    @include transition(.25s, (opacity, visibility));
     
     img {
         @media (max-width: 1024px) {
@@ -17,5 +18,10 @@
 
     @media (max-width: 768px) {
         display: none;
+    }
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
     }
 }

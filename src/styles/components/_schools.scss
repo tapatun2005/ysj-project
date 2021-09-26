@@ -3,22 +3,41 @@
     justify-content: space-between;
     width: calc(100% + 20px);
     flex-wrap: wrap;
+    margin: 50px 0;
 }
 
 .school {
     text-align: left;
-    background: var(--primary);
+    background: $white;
     padding: 0px 40px 20px 40px;
     margin-bottom: 20px;
     margin-right: 20px;
     flex: 1 0 0;
     color: $black;
     text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba($black, .05);
+    @include transition(.1s, transform);
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+        width: 32px;
+        margin-right: 10px;
+    }
+
 
     @media (max-width: 620px) {
         flex: 1 0 auto;
     }
+
     h3 {
-        color: $white;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    &:hover {
+        transform: scale(1.025);
     }
 }

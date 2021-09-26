@@ -3,13 +3,11 @@ extends ../../Layout/master.pug
 block content
   main
     section.hero
-      picture.image-lazy.hero__bg
-        source(media="(min-width: 320px)" data-srcset="/assets/homepage-bg.jpg")
-        img(src="/assets/homepage-bg.jpg", alt="")
       .container.-lg
         .breadcrumb Schools          
-        h1 School of Education, Languages and Psychology Action Research Team
-          span Dr Clare Cunningham, Ryan Myhill and Nicole Nash
+        h1 
+          .js-split-words School of Education, Languages and Psychology Action Research Team
+          .subtitle Dr Clare Cunningham, Ryan Myhill and Nicole Nash
         .hero__desc
           p.-lg A staff-student team in the School of Education, Language & Psychology (ELP) conducted a series of one-to-one and group interviews with students and an online staff survey in order to develop an understanding of student and staff attitudes towards ecological and environmental justice related teaching and learning opportunities in the curriculum. 
     
@@ -50,11 +48,14 @@ block content
       .container.-lg.center
         h2 Check out other schools
         .schools
-          a(href="").school
-            h3 Art
-          a(href="").school
-            h3 Humanity
-          a(href="").school
+          a(href="/schools/york-business-school/").school
+            img(src="/assets/icon__square.svg", alt="")
             h3 Business
+          a(href="/schools/school-of-the-arts/").school
+            img(src="/assets/icon__hexagon.svg", alt="")
+            h3 Art
+          a(href="/schools/school-of-humanity/").school
+            img(src="/assets/icon__circle.svg", alt="")
+            h3 Humanity
           
         

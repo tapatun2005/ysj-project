@@ -3,7 +3,9 @@ import {
     Loader,
     Menu,
     SplitWords,
-    SectionLoad
+    SectionLoad,
+    ScrollButton
+    
 } from 'Components'
 
 const App = async () => {
@@ -14,6 +16,7 @@ const App = async () => {
             new SplitWords('.js-split-words')
             new SectionLoad('section')
             new Images('.image')
+            new ScrollButton('.scroll')
         })
     })
 
