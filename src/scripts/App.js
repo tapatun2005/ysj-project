@@ -1,5 +1,6 @@
 import { 
     Images,
+    LazyLoad,
     Loader,
     Menu,
     SplitWords,
@@ -12,6 +13,7 @@ const App = async () => {
 
     await window.addEventListener('load', () => {
         const promise = Loader().then(() => {
+            new LazyLoad()
             Menu('nav', '.toggle')
             new SplitWords('.js-split-words')
             new SectionLoad('section')
