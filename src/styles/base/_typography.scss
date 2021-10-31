@@ -32,6 +32,13 @@ h3 {
     }
 }
 
+h4 {
+    font-size: 2rem;
+    @media (max-width: 480px) {
+        font-size: 6vw;
+    }
+}
+
 p {
     margin-bottom: 2rem;
     margin-top: 0;
