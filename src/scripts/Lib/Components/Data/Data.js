@@ -27,9 +27,11 @@ class Data {
         const items = await base(this.type).select({view: 'Grid view'}).all()
         if (items) {
             const filtered = items.filter( x => x.fields.Category === this.config.category)
-            console.log(items)
-            console.log(filtered)
-            this._render(filtered)
+            if (filtered.length === 0) {
+                 $selector(`[data-resources="${this.config.category}"]`).classList.add('is-hidden')
+            } else {
+                this._render(filtered)
+            }
         }
     }
 
