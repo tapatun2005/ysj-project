@@ -1,0 +1,19 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -40px;
+}
+
+.card {
+    width: calc(50% - 40px);
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 40px 60px;
+    background: $white;
+    box-shadow: 0 5px 40px rgba($black, .1);
+    border-radius: 10px;
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 40px 30px;
+    }
+}

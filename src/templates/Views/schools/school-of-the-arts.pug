@@ -17,18 +17,32 @@ block content
       .container.-lg
         .cols
           .col
-            .image
-              picture.image-lazy
-                source(media="(min-width: 320px)" data-srcset="/assets/image-tes.jpg")
-                img(src="/assets/image-tes.jpg", alt="")
-          .col
-            p Key outputs included:
-            ul
-              li a spoken word piece by Henry Dawson, drawing on a pair of contrasting images representing the Global North and South to articulate what ecological injustice means to him, and the way it is often hidden from view in everyday life and education. This was an important part of the team’s process of identifying the need for greater honesty and space for discussion of ecological and justice issues in university life.
+            h3 Key outputs included:
+            .cards
+              .card
+                p A spoken word piece by Henry Dawson, drawing on a pair of contrasting images representing the Global North and South to articulate what ecological injustice means to him, and the way it is often hidden from view in everyday life and education. This was an important part of the team’s process of identifying the need for greater honesty and space for discussion of ecological and justice issues in university life.
+                ._img 
                 audio(controls="true")
                   source(src="/assets/audio.mp3" type="audio/mpeg")
                   span Your browser does not support the audio element.
-              li a ‘zine’ (handmade magazine) by Avalon Garvey containing many findings of the team’s research. In place of ‘recommendations’ this zine shares possible visions of ways towards a more ‘biophilic’ university which engages students actively in ecological justice through the campus and curriculum. Some images of the zine are included here.
+              .card
+                p A ‘zine’ (handmade magazine) by Avalon Garvey containing many findings of the team’s research. In place of ‘recommendations’ this zine shares possible visions of ways towards a more ‘biophilic’ university which engages students actively in ecological justice through the campus and curriculum. Some images of the zine are included here.
+                .carousel
+                  .carousel__list
+                    ul 
+                      li 
+                        img(src="/assets/school-art__1.jpg", alt="")
+                      li 
+                        img(src="/assets/school-art__2.jpg", alt="")
+                      li 
+                        img(src="/assets/school-art__3.jpg", alt="")
+                      li 
+                        img(src="/assets/school-art__4.jpg", alt="")
+                      li 
+                        img(src="/assets/school-art__5.jpg", alt="")
+                  .carousel__navs
+                    div(data-dir="next") 
+                    div(data-dir="prev") 
     
     section(data-resources="art")
       .container

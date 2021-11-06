@@ -6,15 +6,18 @@ import {
 } from "Functions"
 
 import { 
-    Data 
+    Data,
+    Carousel
 } from 'Components'
 
 App().then(() => {
     if ($selector('#dowloads')) {
-        console.log($selector('#dowloads').dataset.category)
         new Data('Schools', {
             output: '#dowloads',
             category: $selector('#dowloads').dataset.category
         })
+    }
+    if ($selector('.carousel')) {
+        new Carousel('.carousel')
     }
 })

@@ -1,0 +1,42 @@
+.carousel {
+    position: relative;
+    ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        @include transition(.5s, transform);
+    }
+
+    li {
+        min-width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__list {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__navs {
+        div {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: $white;
+            box-shadow: 0 5px 15px rgba($black, .1);
+            &:last-child {
+                left: 100%;
+            }
+        }
+    }
+}
