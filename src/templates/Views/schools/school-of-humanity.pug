@@ -3,6 +3,9 @@ extends ../../Layout/master.pug
 block content
   main
     section.hero
+      picture.image-lazy.hero__bg
+        source(media="(min-width: 320px)" data-srcset="/assets/business__cover.jpg")
+        img(src="/assets/business__cover__thumb.jpg", alt="")
       .container.-lg
         .breadcrumb Schools          
         h1 
@@ -19,8 +22,8 @@ block content
           .col
             .image
               picture.image-lazy
-                source(media="(min-width: 320px)" data-srcset="/assets/image-tes.jpg")
-                img(src="/assets/image-tes.jpg", alt="")
+                source(media="(min-width: 320px)" data-srcset="/assets/humanity__side.jpg")
+                img(src="/assets/humanity__side__thumb.jpg", alt="")
           .col
             p Our findings revealed important insights into students’ knowledge of, responses to, and engagement with campus ‘green initiatives’. Participants were unaware of some of YSJ’s environmental practice, but saw email and social media communication as having limited value in promoting these. Pride in YSJ was important: participants wanted YSJ to go above and beyond standard practice in its commitment to ecological justice. Participants valued campus environmental initiatives and the opportunities these offer for learning and for greening their lifestyles, but they wanted dedicated space for sustainability conversations and demonstrations. 
     
