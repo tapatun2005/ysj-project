@@ -1,0 +1,58 @@
+extends ../Layout/master.pug
+
+block content
+  main
+    
+    section.hero.white
+      picture.image-lazy.hero__bg
+        source(media="(min-width: 320px)" data-srcset="/assets/homepage-bg.jpg")
+        img(src="/assets/homepage-bg__thumb.jpg", alt="")
+      .container.-lg
+        h1
+            .subtitle Project research
+            .js-split-words Outputs and resources
+        //- .hero__desc
+        //-     p You can find all the research outputs and insights on this page below.
+      .scroll
+        img(src="/assets/arrow-down-lg-black.svg", alt="")
+    
+    section.white(data-resources="business")
+      .container
+        .cols
+          .col
+            h2 York Business School
+          .col
+            #dowloads-business(data-category="business")
+
+    section.white(data-resources="language")
+      .container
+        .cols
+          .col
+            h2 School of EPL
+          .col
+            #dowloads-language(data-category="language")
+    
+    section.white(data-resources="art")
+      .container
+        .cols
+          .col
+            h2 School of the Arts
+          .col
+            #dowloads-art(data-category="art")
+    
+    section.white(data-resources="humanity")
+      .container
+        .cols
+          .col
+            h2 School of Humanities
+          .col
+            #dowloads-humanity(data-category="humanity")
+
+    section.white(data-resources="others")
+      .container
+        .cols
+          .col
+            h2 Others
+          .col
+            #dowloads-others(data-category="others")
+            

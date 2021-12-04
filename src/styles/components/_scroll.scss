@@ -3,7 +3,9 @@
     bottom: 60px;
     right: 60px;
     z-index: 1;
+    cursor: pointer;
     @include transition(.25s, (opacity, visibility));
+
     
     img {
         @media (max-width: 1024px) {

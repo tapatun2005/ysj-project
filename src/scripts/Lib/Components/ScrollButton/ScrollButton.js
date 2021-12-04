@@ -5,7 +5,6 @@ import {
 class ScrollButton {
     constructor(el) {
         this.el = $selector(el)
-        console.log(this.el)
         this.isVisible = true
         this._init()
     }
@@ -13,6 +12,13 @@ class ScrollButton {
     _init() {
         this._scroll()
         window.addEventListener('scroll', () => this._scroll())
+        this.el.addEventListener('click', () => this._click())
+    }
+
+    _click() {
+        const section = document.querySelectorAll('section')[0]
+        const height = section.getBoundingClientRect().height
+        window.scrollTo({top: height, behavior: 'smooth'})
     }
 
     _scroll() {

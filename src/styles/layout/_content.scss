@@ -21,6 +21,7 @@
 
 main {
     width: 100%;
+    overflow: hidden;
 }
 
 section {
@@ -41,6 +42,18 @@ section {
         @media (max-width: 768px) {
             padding: 25px 0;
         }
+    }
+
+    &.white:not(.is-hidden) + &.white, 
+    &.black:not(.is-hidden) + &.black {
+        margin-top: -150px;
+        @media (max-width: 768px) {
+            margin-top: -75px;
+        }
+    }
+
+    &.hero + & {
+        margin-top: 0 !important;
     }
 }
 

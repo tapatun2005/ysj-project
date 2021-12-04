@@ -2,7 +2,7 @@ extends ../../Layout/master.pug
 
 block content
   main
-    section.hero
+    section.hero.white
       picture.image-lazy.hero__bg
         source(media="(min-width: 320px)" data-srcset="/assets/art__cover.jpg")
         img(src="/assets/art__cover__thumb.jpg", alt="")
@@ -16,7 +16,7 @@ block content
       .scroll
         img(src="/assets/arrow-down-lg-black.svg", alt="")
     
-    section
+    section.white
       .container.-lg
         .cols
           .col
@@ -47,7 +47,7 @@ block content
                     div(data-dir="next") <svg viewBox="0 0 25 45"><path d="M61.77,31.77a2.5,2.5,0,0,0-3.54-3.54l-20,20a2.52,2.52,0,0,0,0,3.54l20,20a2.5,2.5,0,0,0,3.54-3.54L43.54,50Z" transform="translate(-37.5 -27.5)"/></svg>
                     div(data-dir="prev") <svg viewBox="0 0 25 45"><path d="M38.23,68.23a2.5,2.5,0,0,0,3.54,3.54l20-20a2.52,2.52,0,0,0,0-3.54l-20-20a2.5,2.5,0,0,0-3.54,3.54L56.46,50Z" transform="translate(-37.5 -27.5)"/></svg>
     
-    section(data-resources="art")
+    section.white(data-resources="art")
       .container
         .cols
           .col
@@ -62,7 +62,7 @@ block content
           a(href="/schools/york-business-school/").school
             img(src="/assets/icon__square.svg", alt="")
             h3 Business
-          a(href="/schools/school-of-humanity/").school
+          a(href="/schools/school-of-humanities/").school
             img(src="/assets/icon__circle.svg", alt="")
             h3 Humanity
           a(href="/schools/school-of-elp/").school
